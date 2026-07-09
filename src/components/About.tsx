@@ -5,7 +5,7 @@ import image2 from '../assets/image2.jpg'
 
 export default function About() {
   return (
-    <section id="about" className="min-h-screen relative py-section-gap px-container-margin flex flex-col justify-center bg-surface-container-lowest overflow-hidden">
+    <section id="about" className="min-h-screen relative py-section-gap px-4 sm:px-container-margin flex flex-col justify-center bg-surface-container-lowest overflow-hidden">
       <div className="grid grid-cols-12 gap-gutter relative z-10 max-w-[1600px] mx-auto w-full items-center">
         
         {/* Text Content */}
@@ -46,7 +46,7 @@ export default function About() {
         </div>
 
         {/* Overlapping Images */}
-        <div className="col-span-12 lg:col-span-6 relative order-1 lg:order-2 h-[500px] lg:h-[700px]">
+        <div className="col-span-12 lg:col-span-6 relative order-1 lg:order-2 h-[450px] sm:h-[500px] lg:h-[700px]">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}

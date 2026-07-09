@@ -32,7 +32,7 @@ export default function Navbar() {
             : "bg-transparent border-transparent py-5"
         )}
       >
-        <div className="flex justify-between items-center px-container-margin w-full max-w-[1600px] mx-auto">
+        <div className="flex justify-between items-center px-4 sm:px-container-margin w-full max-w-[1600px] mx-auto">
           <a
             href="#"
             className="font-headline-md text-headline-md leading-tight font-bold tracking-tighter text-primary"
@@ -53,7 +53,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 md:gap-6">
             <a
               href="#contact"
               className="hidden lg:block font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase"

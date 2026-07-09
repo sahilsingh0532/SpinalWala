@@ -11,7 +11,7 @@ export default function Outcomes() {
   ]
 
   return (
-    <section id="gallery" className="min-h-screen py-section-gap px-container-margin bg-surface">
+    <section id="gallery" className="min-h-screen py-section-gap px-4 sm:px-container-margin bg-surface">
       <div className="grid grid-cols-12 gap-gutter max-w-[1600px] mx-auto w-full">
         
         {/* Content Side */}
@@ -45,8 +45,8 @@ export default function Outcomes() {
         </div>
 
         {/* Mosaic Masked Grid Side */}
-        <div className="col-span-12 lg:col-span-8 lg:pl-12 mt-12 lg:mt-0">
-          <div className="grid grid-cols-2 gap-unit h-[600px] lg:h-[819px] relative">
+        <div className="col-span-12 lg:col-span-8 lg:pl-12 mt-10 lg:mt-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-unit h-auto md:h-[600px] lg:h-[819px] relative">
             
             {/* Main Window */}
             <motion.div 
@@ -54,7 +54,7 @@ export default function Outcomes() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="bg-surface relative overflow-hidden col-span-2 md:col-span-1 border border-outline-variant/20 group"
+              className="bg-surface relative overflow-hidden col-span-1 border border-outline-variant/20 group h-[250px] md:h-auto"
             >
               <div 
                 className="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-1000"
@@ -67,13 +67,13 @@ export default function Outcomes() {
             </motion.div>
 
             {/* Side Grid Stack */}
-            <div className="grid grid-rows-2 gap-unit h-full col-span-2 md:col-span-1">
+            <div className="grid grid-rows-2 gap-3 md:gap-unit h-auto md:h-full col-span-1">
               <motion.div 
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-surface relative overflow-hidden border border-outline-variant/20 group"
+                className="bg-surface relative overflow-hidden border border-outline-variant/20 group min-h-[200px] md:min-h-0"
               >
                 <div 
                   className="w-full h-full bg-cover bg-center grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" 
@@ -87,7 +87,7 @@ export default function Outcomes() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="bg-surface-container-lowest relative overflow-hidden border border-outline-variant/20 flex items-center justify-center p-8 text-center group hover:bg-surface-container-high transition-colors duration-300"
+                className="bg-surface-container-lowest relative overflow-hidden border border-outline-variant/20 flex items-center justify-center p-6 md:p-8 text-center group hover:bg-surface-container-high transition-colors duration-300 min-h-[180px] md:min-h-0"
               >
                 <div>
                   <Activity className="w-12 h-12 text-primary mb-4 mx-auto opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300" strokeWidth={1} />

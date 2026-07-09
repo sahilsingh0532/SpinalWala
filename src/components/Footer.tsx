@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer id="contact" className="bg-surface-container-low border-t border-outline-variant/30 py-12 w-full">
-      <div className="flex flex-col md:flex-row justify-between items-center px-container-margin gap-gutter max-w-[1600px] mx-auto">
+      <div className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-container-margin gap-4 md:gap-gutter max-w-[1600px] mx-auto">
         
         <div className="font-label-caps text-primary mb-4 md:mb-0 uppercase tracking-widest text-lg">
           The SpineWala Clinic

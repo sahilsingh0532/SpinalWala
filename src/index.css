@@ -38,7 +38,7 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-primary text-on-primary border border-primary px-12 py-6 font-label-caps text-[0.75rem] font-bold tracking-[0.1em] transition-colors duration-300 uppercase;
+    @apply bg-primary text-on-primary border border-primary px-8 py-4 sm:px-12 sm:py-6 font-label-caps text-[0.75rem] font-bold tracking-[0.1em] transition-colors duration-300 uppercase;
   }
   
   .btn-primary:hover {
@@ -46,7 +46,7 @@
   }
   
   .btn-secondary {
-    @apply bg-transparent text-primary border border-primary px-12 py-6 font-label-caps text-[0.75rem] font-bold tracking-[0.1em] transition-colors duration-300 uppercase;
+    @apply bg-transparent text-primary border border-primary px-8 py-4 sm:px-12 sm:py-6 font-label-caps text-[0.75rem] font-bold tracking-[0.1em] transition-colors duration-300 uppercase;
   }
   
   .btn-secondary:hover {
