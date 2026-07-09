@@ -15,20 +15,19 @@ export default function Hero() {
   return (
     <section id="services" className="min-h-screen relative flex flex-col justify-between pt-32 pb-container-margin px-container-margin overflow-hidden">
       {/* Background Image with Parallax */}
-      <motion.div 
-        style={{ y }}
-        className="absolute inset-0 z-[-2] w-full h-[120%]"
-      >
-        <div 
-          className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: `url(${image1})` }}
-        />
-      </motion.div>
+      <div className="absolute inset-0 z-0">
+    <motion.div style={{ y }} className="absolute inset-0 w-full h-[120%]">
+      <div 
+        className="w-full h-full bg-cover bg-center"
+        style={{ backgroundImage: `url(${image1})` }}
+      />
+    </motion.div>
+    <div className="absolute inset-0 bg-surface/60 backdrop-blur-[2px]" />
+  </div>
       
       {/* Overlay */}
-      <div className="absolute inset-0 z-[-1] bg-surface/60 backdrop-blur-[2px]"></div>
-
-      <div className="grid grid-cols-12 gap-gutter mt-16 md:mt-32 max-w-[1600px] mx-auto w-full">
+      
+      <div className="relative z-10 grid grid-cols-12 gap-gutter mt-16 md:mt-32 max-w-[1600px] mx-auto w-full">
         <div className="col-span-12 md:col-span-8 lg:col-span-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -47,7 +46,7 @@ export default function Hero() {
       </div>
 
       {/* Bento Grid Features */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-unit mt-16 max-w-[1600px] mx-auto w-full">
+       <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-unit mt-16 max-w-[1600px] mx-auto w-full">
         {features.map((feature, idx) => (
           <motion.div
             key={feature.number}
