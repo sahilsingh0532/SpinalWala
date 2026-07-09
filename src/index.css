@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-background antialiased overflow-x-hidden;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .masked-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .glass-panel {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  .dark .glass-panel {
+    background-color: rgba(26, 28, 30, 0.7);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-on-primary border border-primary px-12 py-6 font-label-caps text-[0.75rem] font-bold tracking-[0.1em] transition-colors duration-300 uppercase;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-transparent text-primary;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-primary border border-primary px-12 py-6 font-label-caps text-[0.75rem] font-bold tracking-[0.1em] transition-colors duration-300 uppercase;
+  }
+  
+  .btn-secondary:hover {
+    @apply bg-surface-container-high;
+  }
+}
