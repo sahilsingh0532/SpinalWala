@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import { Settings2, BarChart2 } from 'lucide-react'
+import image5 from '../assets/image5.jpg'
+import image2 from '../assets/image2.jpg'
 
 export default function About() {
   return (
@@ -53,7 +55,7 @@ export default function About() {
             className="w-full h-full relative"
           >
             <img 
-              src="/images/image2.jpg" 
+              src={image2}  
               alt="Chiropractic Adjustment" 
               className="w-full h-full object-cover filter grayscale sepia-[0.05] contrast-[1.1] rounded-sm" 
             />
@@ -66,7 +68,7 @@ export default function About() {
               className="absolute -bottom-8 -left-8 w-48 h-48 md:w-72 md:h-72 border-4 border-surface-container-lowest bg-surface-container-lowest shadow-2xl z-20 overflow-hidden rounded-sm hidden sm:block"
             >
               <img 
-                src="/images/image5.jpg"
+                src={image5}
                 alt="Diagnostic Scan" 
                 className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" 
               />

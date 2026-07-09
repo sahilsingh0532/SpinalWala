@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import image1 from '../assets/image1.jpg'
 
 export default function Hero() {
   const { scrollY } = useScroll()
@@ -20,7 +21,7 @@ export default function Hero() {
       >
         <div 
           className="w-full h-full bg-cover bg-center"
-          style={{ backgroundImage: 'url("/images/image1.jpg")' }}
+          style={{ backgroundImage: `url(${image1})` }}
         />
       </motion.div>
       

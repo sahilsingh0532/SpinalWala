@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center px-container-margin gap-gutter max-w-[1600px] mx-auto">
         
         <div className="font-label-caps text-primary mb-4 md:mb-0 uppercase tracking-widest text-lg">
-          PHYSio CLINIC
+          The SpineWala Clinic
         </div>
         
         <div className="flex gap-8 mb-6 md:mb-0">

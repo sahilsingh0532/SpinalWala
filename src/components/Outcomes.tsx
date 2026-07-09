@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import { Plus, Activity } from 'lucide-react'
+import image4 from '../assets/image4.jpg'
+import image3 from '../assets/image3.jpg'
 
 export default function Outcomes() {
   const services = [
@@ -56,7 +58,7 @@ export default function Outcomes() {
             >
               <div 
                 className="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-1000"
-                style={{ backgroundImage: "url('/images/image3.jpg')" }}
+                style={{ backgroundImage: `url(${image3})` }}
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 glass-panel border-t border-outline-variant/20 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
                 <h3 className="font-headline-md text-primary mb-1">Cervical Traction</h3>
@@ -75,7 +77,7 @@ export default function Outcomes() {
               >
                 <div 
                   className="w-full h-full bg-cover bg-center grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" 
-                  style={{ backgroundImage: "url('/images/image4.jpg')" }}
+                  style={{ backgroundImage: `url(${image4})` }}
                 />
                 <div className="absolute inset-0 bg-primary/10 mix-blend-multiply group-hover:bg-transparent transition-colors duration-500"></div>
               </motion.div>
